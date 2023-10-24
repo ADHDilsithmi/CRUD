@@ -1,0 +1,27 @@
+﻿# .gitignore for a C# .NET Core project
+
+# Visual Studio Code
+.vscode/
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Logs and databases
+*.sqlite
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder configuration files
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/

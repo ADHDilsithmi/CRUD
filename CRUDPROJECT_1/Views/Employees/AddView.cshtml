@@ -1,0 +1,53 @@
+﻿@model CRUDPROJECT_1.Models.AddEmployeeModel
+
+@{
+}
+
+<h1>Add Employee</h1>
+
+<form method="post" action="Add" >
+
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" id="employeeName" placeholder="Enter Employee Name" asp-for="Name" required>
+        <div class="invalid-feedback">
+            Please enter a name.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" id="employeeEmail" placeholder="Enter Employee Email" asp-for="Email" required>
+        <div class="invalid-feedback">
+            Please enter valid email.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Salary</label>
+        <input type="number" class="form-control" id="employeeSalary" placeholder="Enter Employee Salary" asp-for="Salary" min="0" required>
+        <div class="invalid-feedback">
+            Please enter valid positive number.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="employeeDOB" placeholder="" asp-for="DateOfBirth" required>
+        <div class="invalid-feedback">
+            Please enter date of birth.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" id="employeeDept" placeholder="Enter Employee Department" asp-for="Department" required>
+        <div class="invalid-feedback">
+            Please enter a department.
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" >Submit</button>
+
+</form>
+
